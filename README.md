@@ -1,9 +1,3 @@
-Below is a clean **README.md version of your project**, formatted correctly for GitHub, using proper Markdown structure, headings, and code fences.
-I rewrote it to match your exact codebase flow: installs → data sources → DFS auth → keyword extraction → DFS connection → keyword ranking → domain parsing → filters → main pipeline.
-
-You can paste this directly into `README.md`.
-
----
 
 # iGaming Link-Building Intelligence Pipeline
 
@@ -11,13 +5,13 @@ Automated SEO intelligence pipeline for analyzing iGaming domains, expanding the
 
 ---
 
-## ⭐ Project Purpose
+##  Project Purpose
 
 This pipeline processes LinkBuilder domain exports, crawls domains, checks keyword rankings, and identifies pages that rank for high-value iGaming keywords in Google’s Top 20.
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 ```bash
 !pip install pandas requests numpy tqdm
@@ -36,7 +30,7 @@ Python packages used:
 
 ---
 
-## 📁 Data Sources
+##  Data Sources
 
 ```python
 KEYWORD_LIST_URL = "https://docs.google.com/spreadsheets/d/1RVL2iATTp2h3Wx-KeDSkrzvdIPMZIUK4nQ9ik87U6o4/export?format=csv"
@@ -47,7 +41,7 @@ These are live Google Sheets CSV exports.
 
 ---
 
-## 🔐 DataForSEO API Configuration
+##  DataForSEO API Configuration
 
 ```python
 DFS_EMAIL = "admin@wldm.io"
@@ -69,7 +63,7 @@ def get_dfs_headers():
 
 ---
 
-## 📥 Load Keywords & Domains
+##  Load Keywords & Domains
 
 ```python
 def load_keywords_data():
@@ -165,7 +159,7 @@ def get_domain_keywords(domain, limit=100):
 
 ---
 
-## 🧹 Quick iGaming Domain Filter
+##   iGaming Domain Filter
 
 ```python
 igaming_domains = domains_df[
@@ -175,7 +169,7 @@ igaming_domains = domains_df[
 
 ---
 
-## ⚙️ Main Pipeline (summary)
+##  Main Pipeline (summary)
 
 1. Load keywords
 2. Load LinkBuilder domains
@@ -190,7 +184,7 @@ igaming_domains = domains_df[
 
 ---
 
-## 📊 Outputs
+##  Outputs
 
 The pipeline generates:
 
@@ -201,7 +195,7 @@ The pipeline generates:
 
 ---
 
-## 📌 Notes
+##  Notes
 
 * Works best in Google Colab
 * Handles 600–100k domains
