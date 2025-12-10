@@ -1,42 +1,59 @@
-# iGaming Link Building Intelligence Pipeline
+# iGaming Link-Building Intelligence Pipeline
 
-An automated data pipeline that processes iGaming domains to identify high-value SEO opportunities and link-building targets.
+## Overview
 
-## 🚀 Overview
+An automated pipeline that processes iGaming domains, expands them into individual pages, and identifies high-value SEO and link-building opportunities. It integrates crawling, keyword ranking data, and keyword matching to generate prioritized outreach insights.
 
-This system analyzes hundreds of iGaming domains from LinkBuilder, expands them to individual pages, and identifies pages ranking for target keywords in Google's top 20. The pipeline delivers prioritized outreach lists for SEO teams, transforming manual research into automated intelligence.
+## Features
 
-## ✨ Features
+LinkBuilder Integration – Processes full domain exports with DR, traffic, and category filters
 
-- **LinkBuilder Integration** - Processes iGaming domains with full metrics (DR, traffic, categories)
-- **Automated Web Crawling** - Expands domains to individual content pages
-- **DataForSEO API Integration** - Fetches ranking keywords and search performance data
-- **Keyword Matching Engine** - Analyzes pages against target iGaming keywords
-- **Scalable Architecture** - Designed to handle 100K+ domains with pagination and rate limiting
-- **Multi-Format Output** - Generates CSVs for outreach, strategy, and full analysis
+Automated Crawling – Expands each domain into its content pages
 
-## 🛠️ Tech Stack
+DataForSEO API Integration – Pulls keyword rankings and search performance
 
-- **Python** - Core programming language
-- **Pandas** - Data processing and analysis
-- **Requests** - API integration and web scraping
-- **DataForSEO API** - Keyword ranking data
-- **Google Colab** - Development and execution environment
+Keyword Matching Engine – Identifies pages ranking for target iGaming keywords
 
-## 📊 Results
+Scalable Architecture – Handles large datasets (100K+ domains) with pagination and rate limiting
 
-- **60% faster processing** vs manual methods
-- **47 high-value pages** identified from initial analysis
-- **30% citation gaps** uncovered for content strategy
-- **Scalable to 100K+ domains** with production-ready architecture
+Multi-Format Output – Generates CSVs for outreach, strategy, and deep analysis
 
-## 🚦 Quick Start
+## Tech Stack
 
-1. **Upload domain list** from LinkBuilder export
-2. **Run the pipeline** - automated crawling and API analysis
-3. **Download opportunity lists** - prioritized outreach targets
-4. **Generate strategy reports** - comprehensive SEO insights
+Python
 
-## 📁 Project Structure
+Pandas
 
-Google Colab - Development and execution environment
+Requests
+
+DataForSEO API
+
+Google Colab
+
+## Results
+
+~60% faster than manual research methods
+
+47 high-value ranking pages identified in the first analysis
+
+~30% citation and content gaps uncovered for SEO strategy
+
+Architecture designed to support large-scale domain collections
+
+## Quick Start
+
+Upload your LinkBuilder domain export.
+
+Run the pipeline in the Colab notebook.
+
+Download the generated outreach and strategy CSVs.
+
+Use the insights to guide link-building and content decisions.
+
+## Project Structure
+
+Notebook – Full pipeline (crawling, API queries, ranking analysis, exports)
+
+Input Folder – LinkBuilder export or custom domain list
+
+Output Folder – Outreach lists, strategy datasets, full analysis CSVs
