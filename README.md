@@ -86,7 +86,7 @@ domains_df = load_domains_data()
 
 ---
 
-## 🎯 Keyword Extraction (per client/domain)
+##  Keyword Extraction (per client/domain)
 
 ```python
 def extract_client_keywords(client_domain):
@@ -98,7 +98,7 @@ igaming_keywords = extract_client_keywords('https://stake.com')
 
 ---
 
-## 🔌 DataForSEO Connection Test
+##  DataForSEO Connection Test
 
 ```python
 endpoint = f"{DFS_BASE_URL}/dataforseo_labs/google/ranked_keywords/live"
@@ -115,7 +115,7 @@ response = requests.post(endpoint, json=test_data, headers=get_dfs_headers())
 
 ---
 
-## 🔎 Get Ranking Keywords for Any Domain
+##  Get Ranking Keywords for Any Domain
 
 ```python
 def get_domain_keywords(domain, limit=100):
@@ -204,12 +204,5 @@ The pipeline generates:
 
 ---
 
-If you want:
 
-* screenshots
-* architecture diagram
-* a flowchart
-* badge icons
-* or a full “How it works” section
-  just say what you want and I'll add it.
 
